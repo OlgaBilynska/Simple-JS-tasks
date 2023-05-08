@@ -7,7 +7,7 @@ const incrementBtn = counterEl.querySelector('[data-action="increment"]')
 let counterNumberEl = document.querySelector('#value');
 
 const updateValueEl = () => {
-    counterNumberEl.textContent = counterValue;
+   counterNumberEl.textContent = counterValue;
 }
 
 const decreaseValue = () => {
