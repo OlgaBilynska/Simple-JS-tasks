@@ -7,13 +7,11 @@ updateToNumber(inputLength);
 
 const onInputCheck = (event) => {
     if (event.currentTarget.value.length == updateToNumber(inputLength)) {
-        // console.log(typeof Number(event.currentTarget.value.length));
-        // console.log(typeof Number(inputLength));
-        // console.log(`input`, event.currentTarget.value.length);
         inputEl.classList.add('valid');
+        inputEl.classList.remove('invalid');
     } else {
         inputEl.classList.add('invalid');
-        // console.log(event.currentTarget.value.length);
+        inputEl.classList.remove('valid');
     }
 }
 
